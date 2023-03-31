@@ -9,12 +9,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- TextView berfungsi untuk menampilkan beberapa teks dalam Activity. -->
-    <!-- match_parent digunakan agar lebar atau tinggi komponen, dapat mengikuti layar atau screen pada perangkat Android. -->
-    <!-- wrap_content digunakan agar lebar atau tinggi, dapat mengikuti object didalam komponen tersebut. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panjang" />
 
-    <!-- EditText berfungsi untuk menerima input yang diketikkan oleh user dalam Activity. -->
-    <!-- Simbol @+id/ kita gunakan saat akan memberikan sebuah id pada elemen atau tag dari layout XML untuk membedakan kegunaan masing-masing elemen atau tag tersebut. -->
     <EditText
         android:id="@+id/edit_length"
         android:layout_width="match_parent"
@@ -46,7 +45,6 @@
         android:inputType="numberDecimal"
         android:lines="1" />
 
-    <!-- Button berfungsi melakukan perintah tertentu sesuai yang sudah dideklarasikan atau didefinisikan pada Activity. -->
     <Button
         android:id="@+id/btn_calculate"
         android:layout_width="match_parent"
